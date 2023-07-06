@@ -1,0 +1,41 @@
+{
+  "name": "cosmolava-client",
+  "version": "0.0.1",
+  "main": "./src/index.js",
+  "author": "ruslan.glaznyov@gmail.com",
+  "description": "lava http client for cosmjs",
+  "author": "ruslan.glaznyov@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest --inject-globals false",
+    "typecheck": "tsc",
+    "allcheck": "npm run typecheck && npm run lint",
+    "lint:fix": "eslint --fix .",
+    "lint": "eslint ."
+  },
+  "keywords": [
+    "cosmos",
+    "lavanet",
+    "lavanetwork",
+    "cosmjs",
+    "Web3",
+    "APIs"
+  ],
+  "dependencies": {
+    "@cosmjs/json-rpc": "^0.31.0",
+    "@cosmjs/stargate": "^0.31.0",
+    "@cosmjs/tendermint-rpc": "^0.31.0",
+    "@lavanet/lava-sdk": "^0.13.1"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.5.0",
+    "dotenv": "^16.3.1",
+    "eslint": "^8.43.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-n": "^16.0.0",
+    "eslint-plugin-promise": "^6.1.1",
+    "jest": "^29.5.0",
+    "typescript": "^5.1.6"
+  }
+}
