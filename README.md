@@ -43,6 +43,8 @@ const tendermintLavaClient = CosmoLavaHttpClient.create(sdk)
 const client = await SigningStargateClient.createWithSigner(tendermintLavaClient, signer)
 
 ```
+__Check `examples` folder for more examples__
+
 ## You want to get involved? 😍
 
 Please submit a pull request if you know any resources that might be helpful to the community. ❤️
