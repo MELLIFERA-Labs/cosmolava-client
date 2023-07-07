@@ -48,4 +48,4 @@ __Check `examples` folder for more examples__
 
 ## You want to get involved? 😍
 
-Please submit a pull request if you know any resources that might be helpful to the community. ❤️
+Please submit a pull request or open an issue ❤️
