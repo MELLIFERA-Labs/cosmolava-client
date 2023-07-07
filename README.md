@@ -2,10 +2,11 @@
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
   
-# cosmoslava-client
+# cosmolava-client
 Lava http client to use [lava-sdk](https://github.com/lavanet/lava-sdk) with [cosmjs](https://github.com/cosmos/cosmjs) 
+
 This package is currently in the Alpha stage and is not production-ready for all usecases. 
-Beacuse of [lava-sdk](https://github.com/lavanet/lava-sdk) in Alpha
+Because of [lava-sdk](https://github.com/lavanet/lava-sdk) in Alpha
 
 <img src="cosmolava.png" width="30%">
 
@@ -32,16 +33,16 @@ const client = await SigningStargateClient.createWithSigner(tendermintLavaClient
 ```
 2. Provide you own lava-sdk instance(To use this approach you need to check lava-sdk compatibility with this package by yourself)
 ```js
-const lava = new LavaSDK({
+const lavaSdk = await new LavaSDK({
     privateKey: process.env.PRIVATE_KEY,
     chainID: process.env.CHAIN_ID ?? 'LAV1',
     geolocation: process.env.GEO ?? '1'
-})
+  })
 
-const tendermintLavaClient = CosmoLavaHttpClient.create(sdk)
+const lavaClient = await CosmoLavaHttpClient.create(lavaSdk)
+const tendermintLavaClient = await Tendermint34Client.create(lavaClient)
 // fully functional cosmjs client :)
 const client = await SigningStargateClient.createWithSigner(tendermintLavaClient, signer)
-
 ```
 __Check `examples` folder for more examples__
 
