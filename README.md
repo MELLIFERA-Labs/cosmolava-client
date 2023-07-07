@@ -8,7 +8,7 @@ Lava http client to use [lava-sdk](https://github.com/lavanet/lava-sdk) with [co
 This package is currently in the Alpha stage and is not production-ready for all usecases. 
 Because of [lava-sdk](https://github.com/lavanet/lava-sdk) in Alpha
 
-<img src="cosmolava.png" width="30%">
+<img src="https://github.com/MELLIFERA-Labs/cosmolava-client/blob/main/cosmolava.png" width="30%">
 
 ## Installation
 npm
