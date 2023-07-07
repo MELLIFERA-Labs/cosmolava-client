@@ -82,6 +82,9 @@ class CosmoLavaHttpClient {
    * */
   static async create (sdk) {
     CosmoLavaHttpClient.#isInternalConstructing = true
+    if ('then' in sdk && typeof sdk.then === 'function') {
+      throw new TypeError('lavaSDK param is Promise')
+    }
     return new CosmoLavaHttpClient(sdk)
   }
 
