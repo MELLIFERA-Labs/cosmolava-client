@@ -14,11 +14,11 @@ Because of [lava-sdk](https://github.com/lavanet/lava-sdk) in Alpha
 ## Installation
 npm
 ```
-npm i cosmoslava-client
+npm i cosmolava-client
 ```
 yarn 
 ```
-yarn add cosmoslava-client
+yarn add cosmolava-client
 ```
 ## Usage 
 1. Use build in lava-sdk instance 
