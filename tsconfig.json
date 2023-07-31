@@ -9,12 +9,11 @@
     "checkJs": true,
     "strict": true,
     "strictNullChecks": true,
-    "noEmit": true
+    "declaration": true,
+    "declarationDir": "types",
+    "emitDeclarationOnly": true
   },
   "include": [
-    ".eslintrc.js",
-    "src",
-    "test",
-    "examples"
+    "src"
   ]
 }
