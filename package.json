@@ -4,6 +4,7 @@
   "main": "./src/index.js",
   "author": "ruslan.glaznyov@gmail.com",
   "description": "lava http client for cosmjs",
+  "typings": "types/index.d.ts",
   "homepage": "https://github.com/MELLIFERA-Labs/cosmolava-client#readme",
   "repository": {
     "type": "git",
@@ -15,7 +16,7 @@
   "license": "MIT",
   "scripts": {
     "test": "jest --inject-globals false",
-    "typecheck": "tsc",
+    "type": "tsc",
     "allcheck": "npm run typecheck && npm run lint",
     "lint:fix": "eslint --fix .",
     "lint": "eslint ."
