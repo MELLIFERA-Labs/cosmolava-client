@@ -1,10 +1,17 @@
 {
   "name": "cosmolava-client",
-  "version": "0.0.2",
+  "version": "0.3.2",
   "main": "./src/index.js",
   "author": "ruslan.glaznyov@gmail.com",
   "description": "lava http client for cosmjs",
-  "author": "ruslan.glaznyov@gmail.com",
+  "homepage": "https://github.com/MELLIFERA-Labs/cosmolava-client#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MELLIFERA-Labs/cosmolava-client"
+  },
+  "bugs": {
+    "url": "https://github.com/MELLIFERA-Labs/cosmolava-clientissues"
+  },
   "license": "MIT",
   "scripts": {
     "test": "jest --inject-globals false",
@@ -25,7 +32,7 @@
     "@cosmjs/json-rpc": "^0.31.0",
     "@cosmjs/stargate": "^0.31.0",
     "@cosmjs/tendermint-rpc": "^0.31.0",
-    "@lavanet/lava-sdk": "^0.13.1"
+    "@lavanet/lava-sdk": "^0.16.1"
   },
   "devDependencies": {
     "@jest/globals": "^29.5.0",
